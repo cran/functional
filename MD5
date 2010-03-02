@@ -1,8 +1,9 @@
-c41c183d66db9d2095201f07a57ee375 *DESCRIPTION
-9a523fdb3091f2d32a2623ffb226f5e7 *NAMESPACE
-9861f5a7d3422e1f853d04bcb1994be9 *R/functional.R
-720f89042655729bb7c39a08a1fc144e *TODO.org
-39611ef1ce740e4d5cbebbfe0d4f92bb *man/Compose.Rd
-9250b94f8f7f7bed521d8e1a3d41e1be *man/Curry.Rd
-5426889d389e5cfa721fdee2863a450f *man/Identity.Rd
-47c8539114a6edcf42e7d03e605d3349 *man/Negate.Rd
+9019150e7812f119eab86e4a85e5aae3 *DESCRIPTION
+8404ba2c2076017543b8c97f6a1a7373 *NAMESPACE
+8a0ce664c51b2d3efa7576a74341e8e7 *R/functional.R
+3768d17cdb2bc9359a99b489856a3fec *man/Compose.Rd
+23f69f2d852dbdfe6b0c151ec9ab3c4b *man/Curry.Rd
+f832240fe048aeff2aca7a448bb6ee79 *man/CurryL.Rd
+874863b907b0bcbc07c3a594d7cbbd0b *man/Identity.Rd
+0ade6523c128b596f7744d10d5064c7a *man/Negate.Rd
+efed9ac03fab7cf95538f4909e59da07 *tests/functional.R
