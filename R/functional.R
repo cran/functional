@@ -78,3 +78,26 @@ Compose <- function(...) {
 ##' list <- c(1, 2, 3)
 ##' stopifnot(list.copy(list) == list)
 Identity <- function(...) c(...)
+
+##' Thanks, Gabor; see <http://stackoverflow.com/a/23726989>: swaps
+##' the first two arguments in a function.
+##' @param f The function whose arguments to swap
+##' @return A function with swapped arguments
+Swap <- function(f) function(x, y, ...) f(y, x, ...)
+
+##' Composition with multiple arguments.
+##'
+##' Thanks, Alexander Davis!
+##' @param \dots the functions to be composed
+##' @return A composed function
+##' @export
+##' @examples
+##' f <- function(x, y) x+y
+##' g <- function(x) x*2
+##' stopifnot(multi.argument.Compose(f, g)(1,1) == 4)
+multi.argument.Compose <- function (...) {
+    fs <- list(...)
+    if (!all(sapply(fs, is.function)))
+        stop("Argument is not a function")
+    function(...) Reduce(function(x, f) f(x), fs[-1], fs[[1]](...))
+}
